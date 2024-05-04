@@ -1,3 +1,5 @@
+Problem url: https://codeforces.com/contest/1968/problem/A
+
 #include<bits/stdc++.h>
 using namespace std;
 #define nn '\n'
