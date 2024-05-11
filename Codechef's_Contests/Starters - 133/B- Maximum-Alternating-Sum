@@ -1,0 +1,36 @@
+Problem Url : https://www.codechef.com/START133D/problems/MXALT
+
+#include<bits/stdc++.h>
+using namespace std;
+#define nn '\n'
+#define ll long long int
+
+void solve() {
+   int n,sum=0;
+   cin>>n;
+   vector<int>arr;
+   for(int i=0;i<n;i++){
+      int temp;
+      cin>>temp;
+      arr.push_back(temp);
+   }
+   sort(arr.begin(),arr.end(),greater<int>());
+   for(int i=0;i<(n/2);i++){
+      sum+=(arr[i]-arr[n-1-i]);
+   }
+   if(n%2){
+   sum+=arr[n/2];
+   }
+   cout<<sum<<nn;
+}
+signed main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int test;
+     cin>>test;
+    while(test--){
+    solve();
+   }
+return 0;
+}
