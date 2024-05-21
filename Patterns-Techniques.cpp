@@ -8,7 +8,7 @@ signed main() {
 
                            //Canvas//
 
-
+//in this type firstly I have to find the canvas size or the value of i and j
 //Level = 1:
 //At first I have to see the canvas size//
 /*x x x x x
@@ -28,12 +28,12 @@ signed main() {
 
 
 //level = 2:
-/*    x
-       x       //i=mx+c
-        x     //canvas size = 6
-         x    //for first x, i=0 , j=0 then c will be 0 so the eqn will be i=j
-          x
-           x        */
+/*x
+ x       //i=mx+c
+  x     //canvas size = 6
+   x    //for first x, i=0 , j=0 then c will be 0 so the eqn will be i=j
+    x
+     x*/
 
   for(int i=0;i<n;i++){
     for(int j=0;j<n;j++){
@@ -50,7 +50,7 @@ signed main() {
     x      //n=5
    x      for any x , if i=1,j =3,then c will be 4, or c=n-1;
   x      //finally , i+j=n-1;
-x       */
+x*/
 
 for(int i=0;i<n;i++){
     for(int j=0;j<n;j++){
@@ -119,16 +119,11 @@ for(int i=0;i<n;i++){
     cout<<nn;
   }
 
+//Level : 4
 
 //                               _Shaded_Region_
 
 
-    
-/*       x    
-        xxx   
-       xxxxx  
-      xxxxxxx 
-     xxxxxxxxx         */
 for(int i=0;i<n;i++){
     for(int j=0;j<2*n-1;j++){
         if(i+j>=n-1 && i>=j-n+1)
@@ -140,8 +135,44 @@ for(int i=0;i<n;i++){
     cout<<nn;
   }
 
+//Level : 5
+//  Given n=6 
+                                            //Row no:
+/* x     x      x     x    x     x      x    x   1
+    x  x   x  x  x  x  x  x  x  x  x  x  x  x    2
+     x   1  x   2 x   3 x  4  x  5  x  6  x      3
+   x   x  x  x  x  x  x  x  x  x  x  x  x  x     4
+ x     x     x     x     x      x     x     x    5                              
+ 1 2 3                                    1 2
+ //   1 2 3 4  Which will be repeated and lastly there will be 2 columns left and at first there were 3 columns so,
+ //The equation of column number will be  3+(4n+2) = 4n+5......Here n=6  */
+
+//same code as level 2's cross pattern
+n=6;
+for(int i=0;i<5;i++){
+    for(int j=0;j<(4*n+5);j++){
+        if(i+j%4==5-1 || i==j%4) //Bcz 4 columns were repeating...the repeating pattern is the copy of the first cross pattern
+        cout<<"x";               //And here instead of i+j%4==n-1 , it will be 5-1 bcz the value of i is 5
+        else{
+           cout<< " ";
+        }
+    }
+    cout<<nn;
+  }
+
+
+
 
 return 0;
 }
 
 
+
+
+        
+    
+
+
+
+
+ 
