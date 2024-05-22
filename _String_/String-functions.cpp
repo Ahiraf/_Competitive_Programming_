@@ -1,4 +1,4 @@
-Description :
+/*Description :
 Given two numbers N,Q and a string S of size N. Followed by Q lines of the following queries:
 pop_back : remove the last character in the string.
 front : print the first character in the string.
@@ -70,7 +70,7 @@ sort 2 5
 push_back a
 substr 1 10
 Sample Output 3
-aeilognzth
+aeilognzth  */
 
 
 #include<bits/stdc++.h>
