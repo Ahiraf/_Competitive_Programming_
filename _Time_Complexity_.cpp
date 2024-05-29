@@ -65,6 +65,53 @@ int main(){
 
 
 
+
+ for(int i = 1; i*i <= n; i++) {      //O(sqrt(n))
+       //work done in o(1)
+ }
+
+
+ 
+for(int i = 1; i <= n; i++) {   
+        for(int j = 1; j <= i; j++) {  //1+2+3+4+5+6+.........sqrt(n) =( sqrt(n)(sqrt(n)+1) ) / 2
+            // work done in O(m)
+        }
+    }
+
+
+
+
+for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= i; j*=2) {  
+            // work done in O(m)
+        }
+    }
+ //In 1st time , 1 bar cholbe , i=1
+ // 2 bar ,i = 2
+ // 2 bar , i= 3 
+ // 3 bar , i=4
+ // 3 bar , i=5
+ // 1 , 2 , 4 , 8 , 16 , ............. i = O(log(i)). and i will be up to n and the outer loop will be iterate up to n times so the total time complexity will be O(nlog(n)).
+ 
+
+
+
+for(int i = 1; i <= n; i++) {
+        for(int j = i; j <= n; j+=i) { // i , 2i , 3i , 4i , .......i >=n     so, number of iterations of the inner loop is n/i times
+            // work done in O(1)
+        }
+    }
+// for the outer loop , n/1 + n/2 + n/3 + n/4 + n/5 +.......n/n = n(1/1 + 1/2 + 1/3 + 1/4 .......) = O(logn)
+ // total = O(nlog(n))
+
+
+
+
+
+
+
+
+ 
     for(int i = 1; i <= n; i++) {
         for(int j = 1; j <= i; j++) {
             // at this position
