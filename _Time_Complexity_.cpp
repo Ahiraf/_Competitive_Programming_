@@ -153,11 +153,42 @@ for(int i = 1; i <= n; i++) {
 
 
 
+ 
+                                          //Master Theorem//
+
+ int power(int a, int b){
+     if(!b)return 1;
+     int temp= power(a,b/2)*Power(a,b/2);
+     if(b%2==1)temp*=a;
+     return temp;
+ }
+ // it is a function to find a^b  so according to master theorem , T(b) = power(b) , T(b) = 2T(b/2) + O(1) 
+ //to apply master theorem here A=2 , B=2 , C=O(1) so, n^(logB(A)) = n^(log2(2)) = n 
+ // totla = O(n)
+
+
+
+ 
+int power(int a, int b){
+     if(!b)return 1;
+     int temp= power(a,b/2)*Power(a,b/2);
+     temp*=temp;
+     return temp;
+ }
+ // it is a function to find a^b  so according to master theorem , T(b) = power(b) , T(b) = 1T(b/2) + O(1) 
+ //to apply master theorem here A=1 , B=2 , C=O(1) so, n^(logB(A)) = n^(log2(1)) = n^0 = 1
+ // totla = O(log(n))
 
 
 
 
 
+
+
+
+
+
+ 
     for(int i = 1; i <= n; i += 2) {
         // work done in O(1)
     }
@@ -211,17 +242,9 @@ for(int i = 1; i <= n; i++) {
 
 
 
-
-
-
-
-
     for(int i = n; i >= 1; i /= 2) {
         // work done in O(m)
     }
-
-
-
 
 
 
