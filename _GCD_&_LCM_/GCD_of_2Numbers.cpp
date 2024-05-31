@@ -1,3 +1,10 @@
+/*   Notation: HCF(a, b) or GCD(a, b) HCF=Highest Common Factor , GCD=Greatest Common Divisor
+     Properties:
+        1) HCF(a, 0) = a (for any integer a)
+        2) HCF(a, b) = HCF(b, a) (commutative property)
+        3) HCF(a, b) = HCF(a - b, b) (Euclid's algorithm)
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 #define nn '\n'
