@@ -1,3 +1,10 @@
+/* Definition: The LCM of two or more integers is the smallest positive integer that is divisible by each of the integers.
+   Notation: LCM(a, b)
+   Properties:
+     1) LCM(a, b) = (a * b) / HCF(a, b)
+     2) LCM(a, b) = LCM(b, a) (commutative property)
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 #define nn '\n'
