@@ -36,7 +36,7 @@ vector<ll> divisors(ll x) {
     vector<ll> ans;
     for (ll i = 1; i * i <= x; i++) { // Start from 1 to avoid division by zero
         if (x % i == 0) {
-            ans.push_back(i);
+            ans.push_back(i);  // I made a mistake here...I keep the next if statement out of this if statement so for 25 total divisors was showing 6 rather than 3
             if (i != x / i) { // Avoid pushing the square root twice for perfect squares like 6*6 for 36.....it will take 6 once
                 ans.push_back(x / i);
             }
