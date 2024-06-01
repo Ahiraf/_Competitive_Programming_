@@ -44,10 +44,9 @@ return 0;
  //The Basic is given below:
 int gcd(int a,int b){
     if(a>b)swap(a,b);
-    else{
-        if(a==0) return b;   //O(log(min(a,b))) and this is the best time complexity for finding gcd//
-        return gcd(b%a,a);
-    }
+     if(a==0) return b;   //O(log(min(a,b))) and this is the best time complexity for finding gcd//
+      return gcd(b%a,a);
+    
 }
 
 //__gcd(a,b) which is built in function ..since it is a built in function it has some complexities regarding long long and precisions issues .
