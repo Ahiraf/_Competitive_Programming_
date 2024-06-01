@@ -1,4 +1,4 @@
-problem url : https://maang.in/problems/Divide-the-Piles-67?resourceUrl=cs103-cp518-pl3503-rs67
+//problem url : https://maang.in/problems/Divide-the-Piles-67?resourceUrl=cs103-cp518-pl3503-rs67
 #include<bits/stdc++.h>
 using namespace std;
 #define nn '\n'
