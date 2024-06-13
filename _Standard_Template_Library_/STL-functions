@@ -1,0 +1,49 @@
+Important functions in STL :
+
+1. sort
+The sort function is used to arrange the elements of a container (like arrays or vectors) in ascending order by default.
+It takes two iterators representing the range of elements to be sorted.
+Time Complexity : O(nlogn)
+vector<int> vec = {5, 2, 8, 1, 7};
+sort(vec.begin(), vec.end());
+
+2. lower_bound
+Finds the position of the first element in a sorted range not less than a specified value.
+Returns an iterator pointing to the found element or the end of the range if no such element is found.**
+Time Complexity: O(logn)
+auto it = lower_bound(vec.begin(), vec.end(), 5);
+
+3. upper_bound
+Finds the position of the first element in a sorted range greater than a specified value.
+Returns an iterator pointing to the found element or the end of the range if no such element is found.**
+Time Complexity: O(logn)
+auto it = upper_bound(vec.begin(), vec.end(), 5);
+
+4. nth_element
+nth_element rearranges elements in a range such that the element at the nth position is the one that would be in that position if the range was fully sorted.
+It provides partial sorting and is more efficient than a full sort if you only need a few elements sorted.
+Average-case time complexity: O(N)
+nth_element(vec.begin(), vec.begin() + 2, vec.end());
+
+5. reverse
+Reverses the order of elements in a range.
+Time Complexity: O(n)
+reverse(vec.begin(), vec.end());
+
+6. unique
+Removes consecutive duplicate elements from a sorted range.
+Time Complexity: O(n)
+auto it = unique(vec.begin(), vec.end());
+vec.erase(it, vec.end());
+
+7. next_permutation
+next_permutation generates the next lexicographically greater permutation of a range.
+It rearranges the elements in the range into the next permutation and returns true, or if there is no such permutation, it returns false.
+Time Complexity: O(n)
+next_permutation(vec.begin(), vec.end());
+
+
+
+
+
+
