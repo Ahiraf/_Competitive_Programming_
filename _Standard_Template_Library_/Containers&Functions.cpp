@@ -549,6 +549,39 @@ int main(){
     cout << *it;
 
 
+/*                                       Purpose and Use Cases of Specialized Containers :
+
+1) Vector (std::vector):
+Purpose: Dynamic array.
+Use Case: Efficient for random access and dynamic resizing. Ideal for use cases where you need to frequently access elements by index.
+ 
+2)Set (std::set and std::unordered_set):
+Purpose: Collection of unique elements.
+Use Case: Useful when you need to maintain a collection of unique items with efficient insertion, deletion, and lookup.
+Ordered sets (std::set) maintain order, while unordered sets (std::unordered_set) provide faster average-case performance.
+ 
+3)Map (std::map and std::unordered_map):
+Purpose: Key-value pairs.
+Use Case: Efficient for key-based lookups, insertions, and deletions. Ordered maps (std::map) maintain key order, 
+ while unordered maps (std::unordered_map) provide faster average-case performance.
+ 
+                                               Why We Need queue and stack :
+ 
+4) Queue (std::queue)
+Purpose: Implements FIFO (First In, First Out) behavior.
+Use Case:
+Task Scheduling: Managing tasks in the order they arrive, such as in print spooling or job scheduling systems.
+Breadth-First Search (BFS): In graph algorithms, queues are used to explore nodes level by level.
+
+5) Stack (std::stack)
+Purpose: Implements LIFO (Last In, First Out) behavior.
+Use Case:
+Expression Evaluation: Useful in parsing expressions and implementing algorithms like the shunting-yard algorithm.
+Backtracking Algorithms: Like depth-first search (DFS) in trees and graphs.
+Function Call Management: Stacks are used internally by compilers to manage function calls and local variables.   */
+
+ 
+
     // cppreference
     // time complexity of
     // count multisets cppreference
