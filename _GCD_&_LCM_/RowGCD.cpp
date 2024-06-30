@@ -28,7 +28,7 @@ void solve()
     }
     int prevalue=0;    // gcd(x,0) = x
     for(int j=1;j<n;j++){
-       prevalue=gcd((arr[j]-arr[0]),prevalue);
+       prevalue=gcd((arr[j]-arr[0]),prevalue);   //gcd(a,b) = gcd(a,b-a) when,b>a  that's why I have sorted arr..
     }
     for(int i=0;i<m;i++){
         cout<<gcd(brr[i]+arr[0],prevalue)<<" ";
