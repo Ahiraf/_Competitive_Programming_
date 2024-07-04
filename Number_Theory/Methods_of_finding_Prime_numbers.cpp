@@ -96,7 +96,7 @@ void solve() {
    } 
    for(int i=2;i<=n;i++) {
      if(is_prime[i]){
-       for(int j=2*i;j<=n;j+=i){
+       for(int j=2*i;j<=n;j+=i){ //this means if is_prime[i] is a prime number than it's multiple of 2 cannot be a prime number ...
           is_prime[j]=0;
         }
       }
