@@ -78,21 +78,36 @@ int main(){
 //               = n +     (n) +               (n) +   ........
 //               = n * log(n)
 
+    
 //So finding all prime numbers from 1 to n there there 2 methods 
 // 1) finding all divisors and if div == 2 then -> prime 
 //but there is a better way then this.And that is , 
-// Sieve eratosthenes : 
-
- vector<bool> isPrime(n + 1, true);
-    isPrime[0] = isPrime[1] = false;
-
-    for(int i = 2; i < n; i++) {
-        if(!isPrime[i]) continue;
-        // we are here, this means i is a prime
-        for(int j = i * i; j < n; j += i) { // int j= 2*i can also be written
-            isPrime[j] = false;
+    
+                                 // Sieve eratosthenes : 
+    
+ //print all the prime numbers between 1 to n :
+    
+void solve() {
+   int n;
+   cin>>n;
+   int is_prime[n+1];
+   for(int i=2;i<=n;i++){
+     is_prime[i]=1;
+   } 
+   for(int i=2;i<=n;i++) {
+     if(is_prime[i]){
+       for(int j=2*i;j<=n;j+=i){
+          is_prime[j]=0;
+        }
+      }
+   }
+   for(int i=2;i<=n;i++){
+       if(is_prime[i]){
+          cout<<i<<" ";
         }
     }
+    cout<<nn;
+}
     // n = 10
     // [false, false, true, true, true, true, true, true, true, true, true]
     // i = 2, j = 4, 6, 8, 10
