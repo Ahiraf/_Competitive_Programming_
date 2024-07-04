@@ -89,7 +89,7 @@ int main(){
     for(int i = 2; i < n; i++) {
         if(!isPrime[i]) continue;
         // we are here, this means i is a prime
-        for(int j = i * i; j < n; j += i) { // int j= 2*i can also be writted
+        for(int j = i * i; j < n; j += i) { // int j= 2*i can also be written
             isPrime[j] = false;
         }
     }
