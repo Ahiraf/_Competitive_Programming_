@@ -1,4 +1,5 @@
 //Problem Url: https://codeforces.com/problemset/problem/1904/A
+//Similar problem for  practice: https://maang.in/problems/8-Neighbors-1141?resourceUrl=cs103-cp518-pl3499-rs1141
 /* Learnings :
           i) Using "set" allows us to store unique positions that a knight can move to.This ensures that we handle 
              each unique attack position only once, despite the knight's potentially overlapping movements.By inserting calculated 
