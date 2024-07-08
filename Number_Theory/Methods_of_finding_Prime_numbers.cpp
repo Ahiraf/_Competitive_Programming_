@@ -86,18 +86,15 @@ int main(){
                                  // Sieve eratosthenes : 
     
  //print all the prime numbers between 1 to n :
-    
+
+const int MAX=1e7+1
+vector<bool>isPrime(MAX,true);    
 void solve() {
-   int n;
-   cin>>n;
-   int is_prime[n+1];
-   for(int i=2;i<=n;i++){
-     is_prime[i]=1;
-   } 
-   for(int i=2;i<=n;i++) {
+    isPrime[0]=false; isPrime[1]=false;//0 and 1 are not primes
+   for(int i=2;i*i<=MAX;i++){
      if(is_prime[i]){
-       for(int j=2*i;j<=n;j+=i){ //this means if is_prime[i] is a prime number than it's multiple of 2 cannot be a prime number ...
-          is_prime[j]=0;
+       for(int j=i*i;j<=MAX;j+=i){ //this means if is_prime[i] is a prime number than it's multiple of 2 cannot be a prime number ...
+          is_prime[j]=false;
         }
       }
    }
