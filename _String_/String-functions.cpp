@@ -19,58 +19,8 @@ The first line contains two integers N,Q. N denoting the size of the string and 
 The second line contains the string S consists of only lowercase English letters.Next Q lines contain the queries.
 
 Output Format
-Output a single line for each testcase representing the answer of the query.
+Output a single line for each testcase representing the answer of the query. */
 
-Constraints
-1≤N,Q≤10 ^3
-
- 
-
-Sample Input 1
-18 8
-assiutinupperegypt
-substr 1 6
-sort 5 8
-pop_back
-back
-reverse 1 6
-front
-push_back i
-print 4
-
-Sample Output 1
-assiut
-p
-n
-s
-
-
-Sample Input 2
-10 8
-algozenith
-substr 5 6
-sort 5 8
-pop_back
-back
-reverse 5 6
-front
-push_back a
-print 5
-Sample Output 2
-ze
-t
-a
-i
-Sample Input 3
-10 5
-algozenith
-sort 5 8
-reverse 3 6
-sort 2 5
-push_back a
-substr 1 10
-Sample Output 3
-aeilognzth  */
 
 
 #include<bits/stdc++.h>
