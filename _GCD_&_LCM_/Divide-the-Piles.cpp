@@ -1,4 +1,8 @@
 //problem url : https://maang.in/problems/Divide-the-Piles-67?resourceUrl=cs103-cp518-pl3503-rs67
+//Similar problem : https://github.com/Ahiraf/_Competitive_Programming_/blob/main/_GCD_%26_LCM_/DeckofCards.cpp
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define nn '\n'
