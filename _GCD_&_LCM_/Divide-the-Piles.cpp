@@ -26,7 +26,7 @@ void solve(){
         g=gcd(g,x);
 
     }
-    if(g>=2)cout<<"Yes"<<nn;
+    if(g>1)cout<<"Yes"<<nn;
     else{
         cout<<"No"<<nn;
     }
