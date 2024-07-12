@@ -71,8 +71,39 @@ for(int i=0;i<n;i++){
   for(int j=0;j<m;j++){
      cin>>v[i][j];
   }
-}
+}       //O(n*m)
 
+//Use of some other functions :
+int main(){
+int q;
+   cin>>q;
+   vector<int>v;
+   while(q--){
+    string m;
+    cin>>m;
+    if(m=="add"){
+        int x;
+        cin>>x;
+        v.push_back(x);//will add element to the back of the vector  
+    } //O(1)
+    if(m=="remove" && !v.empty()){//If the vector is not empty then it will remove element
+        v.pop_back();  //O(1)
+    }
+    if(m=="print"){
+            int x;
+            cin>>x;
+            if(x<v.size()){//If the given index in less the size of the vector then it will print the element of that index
+                 cout<<v[x]<<nn;
+            }
+        else{
+            cout<<"0"<<nn;
+        }
+    }
+    if(m=="clear"){ //O(n) , n= the number of elements of the vector 
+        v.clear(); // Will remove all the elements of the vector
+    }
+   }
+}
 
 
 
