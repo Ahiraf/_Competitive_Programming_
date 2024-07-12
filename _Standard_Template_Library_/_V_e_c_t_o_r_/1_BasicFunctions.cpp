@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;  //vector is continuous memory block like array//
-/*void printvec(vector<int>&v){
+void printvec(vector<int>&v){
     cout<<"size:"<<v.size()<<endl;
 for(int i=0;i<v.size();i++){
 
@@ -36,14 +36,7 @@ printvec(v2);
 
 
 
-
-
-
-
-
-
-//Vector of Pair///
-
+                                                    //Vector of Pair///
 
 
 void printvec(vector<pair<int,int>>&v){
@@ -66,18 +59,20 @@ for(int i=0;i<n;i++){
     v.push_back({x,y});
 }
  printvec(v) ;
-}*/
+}
 
 
+                                                      //Vector of vector//
+//Same as 2D array ........
+int main() {
+int n,m; //nxm 2D vector
+vector<vector<int>>v(n,vector<int>m);
+for(int i=0;i<n;i++){
+  for(int j=0;j<m;j++){
+     cin>>v[i][j];
+  }
+}
 
-
-
-
-
-
-
-
-//Vector of Array//
 
 
 
