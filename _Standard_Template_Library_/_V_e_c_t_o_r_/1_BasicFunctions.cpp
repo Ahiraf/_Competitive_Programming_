@@ -9,7 +9,7 @@ for(int i=0;i<v.size();i++){
 v.push_back(2);
 cout<<endl;
 }
-
+//Vector has four types of iterator : 1)v.begin()  ,  2) v.end()  ,  3) v.rbegin()->same as v.end()  ,  4)v.rend()->same as v.begin()
 int main(){
 vector<int>v;
 int n;
