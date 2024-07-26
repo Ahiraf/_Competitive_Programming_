@@ -92,7 +92,7 @@ int main(){
 //  i) N<= 10^2
 // ii) N<= 10^3
 // iii) N <= 10^5
-                                  //i)
+                                  //  i)
     int N; cin>>N;
         int arr[N];
         for(int i=0;i<N;i++){
@@ -111,7 +111,34 @@ int main(){
     cout<<ans<<'\n';
 
                            
+                                          //   ii)
 
+ int N; cin>>N;
+    vector<int>arr(N);
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    vector<int>prefix_sum(N);
+    for(int i=0;i<N;i++){
+        if(i>0){
+            prefix_sum[i]=arr[i] + prefix_sum[i-1];
+        }
+        else{
+             prefix_sum[i]=arr[i];
+        }
+    }
+    int ans=0;
+    for(int st=0;st<N;st++){
+        for(int en=st;en<N;en++){
+           int cursum=(prefix_sum[en]-(st==0?0:prefix_sum[st-1]));
+           ans+=cursum;
+        }
+    }
+    cout<<ans<<'\n';
+
+
+
+                                                 iii)
 
 
 return 0;
