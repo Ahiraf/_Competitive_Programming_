@@ -138,7 +138,21 @@ int main(){
 
 
 
-                                                 iii)
+                                            //  iii)Contribution Technique
+
+ 
+  int N; cin>>N;
+    vector<int>arr(N);
+    for(int i=0;i<N;i++){
+        cin>>arr[i];
+    }
+    int ans=0;
+    int multi=1;
+    for(int st=0;st<N;st++){
+        multi=(st+1)*(N-st)*arr[st];
+        ans+=multi;
+    }
+    cout<<ans<<'\n';
 
 
 return 0;
