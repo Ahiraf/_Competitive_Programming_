@@ -9,7 +9,7 @@ const long long int Max = 1e9 + 7;
 long double PI = acos(-1);
 
 const int MAXN = 100100;
-vector<int> ans[MAXN];
+vector<int> ans[MAXN];  //For global scope the length of vector can only be costant . 
 
 // Precompute divisors up to 1000
 void Divisors()
