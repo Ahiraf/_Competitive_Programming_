@@ -94,7 +94,7 @@ void solve() {
    for(int i=2;i*i<=MAX;i++){
      if(is_prime[i]){
        for(int j=i*i;j<=MAX;j+=i){ //this means if is_prime[i] is a prime number than it's multiple of 2 cannot be a prime number ...
-          is_prime[j]=false;
+          is_prime[j]=false;       //If i*i is written it can over flow sometimes. So I can also use (2*i) instead of (i*i) both are same
         }
       }
    }
