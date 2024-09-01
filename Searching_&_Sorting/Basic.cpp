@@ -2,10 +2,6 @@
 using namespace std;
 #define int long long int
 #define nn "\n"
-#define pb push_back#include<bits/stdc++.h>
-using namespace std;
-#define int long long int
-#define nn "\n"
 #define pb push_back
 
 void kodiko(){
