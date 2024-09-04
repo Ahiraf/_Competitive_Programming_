@@ -1,4 +1,24 @@
 //Problem Url :https://codeforces.com/contest/2008/problem/B
+/*Learnings : 
+1 1 1 1 1 1 1 1  <- 1st row (all 1s)
+1 0 0 0 0 0 0 1  <- 2nd row (1s on the border, 0s inside)
+1 0 0 0 0 0 0 1  <- 3rd row (1s on the border, 0s inside)
+..............
+..............
+1 0 0 0 0 0 0 1  <- (k-1)th row
+1 1 1 1 1 1 1 1  <- kth row (all 1s)
+
+When flattening this matrix row by row into a string :
+First Row : The first k elements of the string will be 1.
+Subsequent Rows: The next rows (from 2nd to (k-1)th) will each contribute 1 at the start, followed by k−2 0s,
+and then another 1 at the end.
+Last Row: The last k elements of the string will be 1.
+
+Identifying When the First 0 Appears :
+The first 0 in the matrix will appear in the second row and the second column. In the flattened string,the first 0 
+will appear immediately after the first k 1s (which correspond to the first row).
+Thus, the first 0 will be at position k+1 in the flattened string.*/
+
 
 #include<bits/stdc++.h>
 using namespace std;
