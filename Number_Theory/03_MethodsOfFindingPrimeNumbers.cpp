@@ -83,7 +83,7 @@ int main(){
 // 1) finding all divisors and if div == 2 then -> prime 
 //but there is a better way then this.And that is , 
     
-                                 // Sieve eratosthenes : 
+                                 // Sieve of eratosthenes : 
     
  //print all the prime numbers between 1 to n :
 
