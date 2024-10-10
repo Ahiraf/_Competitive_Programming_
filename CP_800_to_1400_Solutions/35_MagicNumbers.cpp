@@ -16,8 +16,9 @@ bool is_magical(string s){
     {
         if(s[i]!='1' && s[i]!='4')return false;
         else if(s[0]=='4')return false;
-        else if(s.find("444") != s.npos)return false;
-    }
+        else if(s.find("444") != s.npos)return false; //When find doesn't locate the substring, it returns npos. 
+                                                      //Therefore, comparing the result of find to npos tells  
+    }                                               //whether the substring was found .
     return true;
 }
 void kodiko(){
