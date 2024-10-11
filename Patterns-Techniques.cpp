@@ -48,11 +48,11 @@ signed main() {
 
 //Level : 3
 
- /*   x    //i+j=c 
+ /*  x    //i+j=c 
     x      //n=5
    x      for any x , if i=1,j =3,then c will be 4, or c=n-1;
   x      //finally , i+j=n-1;
-x        */
+ x        */
 
 for(int i=0;i<n;i++){
     for(int j=0;j<n;j++){
@@ -66,11 +66,11 @@ for(int i=0;i<n;i++){
   }
 
 //Level : 4
-/* x     x   
-    x  x      
-     x      
-   x   x  
-  x     x */
+/* x      x   
+     x  x      
+      x      
+    x   x  
+  x       x   */
 
 for(int i=0;i<n;i++){
     for(int j=0;j<n;j++){
@@ -126,7 +126,13 @@ for(int i=0;i<n;i++){
 //Level : 7
 
 //                               _Shaded_Region_
+    
 
+/*     x    
+      xxx   
+     xxxxx  
+    xxxxxxx 
+   xxxxxxxxx      */
 
 for(int i=0;i<n;i++){
     for(int j=0;j<2*n-1;j++){
