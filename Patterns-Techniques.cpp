@@ -233,3 +233,37 @@ return 0;
 }
 
 
+//Level : 12 (Diamond shape)
+
+    //       0
+    //     0 1 0
+    //   0 1 2 1 0
+    // 0 1 2 3 2 1 0     when n==3
+    //   0 1 2 1 0
+    //     0 1 0
+    //       0
+
+   int n;
+   cin>>n;
+   int total_row=(2*n)+1;
+   for(int i=0;i<total_row;i++){
+
+    int level=(i<=n)?i:(2*n-i);
+    int spaces=(n-level)*2;
+
+    for(int k=0;k<spaces;k++){
+        cout<<" ";
+    }
+    for(int j=0;j<=level;j++){
+        cout<<j;
+        if(j!=level)cout<<" ";
+    }
+    for(int j=level-1;j>=0;j--){
+        cout<<" "<<j;
+    }
+    cout<<nn; 
+    }
+
+ 
+
+
