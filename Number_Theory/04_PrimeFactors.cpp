@@ -5,6 +5,19 @@ Therefore, at least one factor in each pair must be <= sqrt(n) and >= sqrt(n).
 */
 //Given a number n. Find all the prime factors of it and their counts
 
+/* Prime Factorisation vs Divisors :
+  Prime Factors:Prime factors are factors of a number that are also prime numbers.For example: Prime factors of 12 are 2 and 3 because 
+  12=2^2 × 3.
+ All Divisors: Divisors include all numbers that divide n, not just primes.For example:
+ Divisors of 12 are 1, 2, 3, 4, 6, and 12.
+
+
+=> Factor is often used in the context of multiplication.
+=> Divisor is often used in the context of division.
+=> In practice, for integers, they refer to the same set of numbers.
+
+*/
+
 
 #include <bits/stdc++.h>
 using namespace std;
