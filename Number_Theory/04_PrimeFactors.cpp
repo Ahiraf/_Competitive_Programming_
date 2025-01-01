@@ -36,9 +36,9 @@ vector<ii> Factor(ll x) {  //return vector of pairs ...The pairs will represent 
 void solve() {
     ll n;
     cin >> n;
-    vector<ii> facts = Factor(n);  // Use vector<ii> instead of vector<ll>
-    for (const auto& f : facts) {  // Iterate over the vector of pairs
-        cout << f.first << " " << f.second << nn;  // Print both elements of the pair
+    vector<ii> facts = Factor(n);  
+    for (auto& f : facts) {  
+        cout << f.first << " " << f.second << nn; 
     }
     cout << nn;
 }
