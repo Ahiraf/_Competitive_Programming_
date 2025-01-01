@@ -1,5 +1,9 @@
 //Any positive number n is expressible as a sum of two squares if and only if the prime factorization of n, 
 //every prime of the form (4k+3) occurs an even number of times.
+//summary of the theorem is, If (Prime factor of c%4==3) && (count of its prime factors % 2==0) then C can be expressed
+//as the square of two positive integers.
+//Prime factor of c%4==3: This checks whether the prime is of the form 4k+3.
+//Count of its prime factors (exponent)%2==0 :This ensures that such primes appear an even number of times in the factorisation of c.
 
 //Problem url : https://leetcode.com/problems/sum-of-square-numbers/description/
 
