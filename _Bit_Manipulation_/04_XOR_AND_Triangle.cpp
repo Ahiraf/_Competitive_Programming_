@@ -5,7 +5,6 @@ using namespace std;
 #define nn "\n"
 const int MAX = 1e2;
 
-
 void kodiko(){
     int x,y = 0;
     cin >> x;
