@@ -1,5 +1,9 @@
 // Problem Statement : https://codeforces.com/contest/2082/problem/A
 
+/* It can also be solved by counting the number of one's in the matrix both row and column wise. Then if the number of
+one's  is odd then flip needed. Also the intersection of row and column should be kept in mind.
+*/
+
 #include<bits/stdc++.h>
 
 using namespace std;
