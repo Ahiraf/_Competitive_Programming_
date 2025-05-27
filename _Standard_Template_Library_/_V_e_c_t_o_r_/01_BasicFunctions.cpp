@@ -32,6 +32,13 @@ printvec(v2);
 
 }
 
+                                // Iterator of Vector 
+
+
+    vector<int> v = {1, 2, 3, 4, 5};
+    vector<int>::iterator it = (--v.end());
+    cout << (*it) << '\n'; // Output : 5
+
 
 
 
